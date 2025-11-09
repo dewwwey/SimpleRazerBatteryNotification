@@ -1,12 +1,14 @@
 name: Publish
 
 on:
-  push:
-    tags:
-      - 'v*'
-    paths-ignore:
-      - 'README.md'
-      - '**.png'
+  workflow: {}  # This disables the workflow
+  # push:
+  #   tags:
+  #     - 'v*'
+  #   paths-ignore:
+  #     - 'README.md'
+  #     - '**.png'
+  # workflow_dispatch:  # Allow manual triggering if needed
 
 jobs:
   build-and-release:
